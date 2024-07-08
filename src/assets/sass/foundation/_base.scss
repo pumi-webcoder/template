@@ -1,0 +1,61 @@
+@use "../global" as *;
+
+html {
+  font-size: size-calc-clamp(14, 16, 375, 1440);
+}
+body {
+  font-family: "Oswald", "Noto Sans JP", sans-serif;
+  font-weight: 500;
+  color: var(--font);
+  font-style: normal;
+}
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+a {
+  color: inherit;
+  display: inline-block;
+}
+
+.mask {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: gray;
+}
+.accent {
+  color: var(--accent);
+}
+
+.u-hidden-all {
+  display: none !important;
+}
+
+.u-hidden-pc {
+  // PC時に非表示
+  @include mq(pc) {
+    display: none !important;
+  }
+}
+
+.u-hidden-sp {
+  // スマホ時に非表示
+  @include mq(sp) {
+    display: none !important;
+  }
+}
+// 視覚的に認知できないユーザへの考慮。視覚的には要素を非表示にするが、スクリーンリーダーには読み上げられるようにする。
+.u-hidden-visually {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
