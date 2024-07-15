@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ja">
+<!-- head -->
+<!-- prettier-ignore -->
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+	<!-- nodndexの記載 -->
+	<meta name="robots" content="noindex" />
+
+	<!-- twitterｶｰﾄﾞ,OGP -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@pumiWebcoder" />
+	<meta property="og:url" content="https://pumiwebcoder.xsrv.jp/" />
+	<meta property="og:title" content="Pumi&#39;s Portfolio" />
+	<meta property="og:description" content="WEBコーダーpumiのポートフォリオサイトです。" />
+	<meta property="og:image" content="./assets/img/OGP.webp" />
+	<meta property="og:image" content="./assets/img/favicon.webp" />
+	<link rel="icon" href="./assets/img/favicon.webp" type="image/webp" />
+
+	<!-- title,description -->
+	<title>Pumi&#39;s Portfolio</title>
+	<meta name="description" content="WEBコーダーpumiのポートフォリオサイトです。" />
+
+	<!-- GoogleFonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600&amp;family=Oswald:wght@400;500&amp;display=swap" rel="stylesheet" />
+
+	<!-- swiper -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<!-- font-awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+	<!-- wow -->
+	<link rel="stylesheet" href="./assets/css/animate.css" />
+	<!-- css読み込み -->
+	<link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+	<!-- header -->
+	<!-- prettier-ignore -->
+	<header class="l-header p-header">
+		<div class="l-inner">
+			<!-- ロゴ、グローバルナビ、ハンバーガーメニュー -->
+			<div class="p-header__container">
+				<!-- ロゴ -->
+				<h1 class="p-header__logo">
+					<a href="./index.html">Pumi's<br />Portfolio</a>
+				</h1>
+				<!-- グローバルナビ -->
+				<nav class="p-header__nav">
+					<ul class="p-header__nav--list">
+						<li class="p-header__nav--item">
+							<a class="p-header__nav--link hover__underline--from-left" href="./#works" target="_self">works</a>
+						</li>
+						<li class="p-header__nav--item">
+							<a class="p-header__nav--link hover__underline--from-left" href="./#skills" target="_self">skills</a>
+						</li>
+						<li class="p-header__nav--item">
+							<a class="p-header__nav--link hover__underline--from-left" href="./#about" target="_self">about</a>
+						</li>
+						<li class="p-header__nav--item">
+							<a class="p-header__nav--link hover__underline--from-left" href="./#contact" target="_self">contact</a>
+						</li>
+						<li class="p-header__nav--item">
+							<a class="p-header__nav--link hover__underline--from-left" href="https://twitter.com/pumi_webcoder" target="_blank">Twitter(X)</a>
+						</li>
+					</ul>
+				</nav>
+				<!-- ハンバーガーメニュー -->
+				<div class="p-header__hamburger--button">
+					<button id="js-drawer__btn" class="c-hamburger-btn" aria-label="ハンバーガーメニュー">
+
+						<span class="c-hamburger-bar"></span>
+
+						<span class="c-hamburger-bar"></span>
+
+						<span class="c-hamburger-bar"></span>
+
+					</button>
+				</div>
+			</div>
+			<!-- ドロワーメニュー（ヘッダーコンテナの外） -->
+			<nav class="p-drawer__nav">
+				<ul class="header__nav--list">
+					<li class="p-drawer__nav--item">
+						<a class="p-drawer__nav--link" href="./#works">works</a>
+					</li>
+					<li class="p-drawer__nav--item">
+						<a class="p-drawer__nav--link" href="./#skills">skills</a>
+					</li>
+					<li class="p-drawer__nav--item">
+						<a class="p-drawer__nav--link" href="./#about">about</a>
+					</li>
+					<li class="p-drawer__nav--item">
+						<a class="p-drawer__nav--link" href="./#contact">contact</a>
+					</li>
+					<li class="p-drawer__nav--item">
+						<a class="p-drawer__nav--link" href="https://twitter.com/pumi_webcoder">Twitter(X)</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main class="main">
+		<!-- BackGround -->
+		<!-- prettier-ignore -->
+
+		<div class="p-bg"></div>
+		<!-- contact -->
+		<!-- prettier-ignore -->
+
+		<section id="contact" class="l-section p-section p-contact wow fadeInUp">
+			<div class="l-inner">
+				<hgroup class="p-section__title">
+					<h2 class="p-section__title--main">Contact</h2>
+					<p class="p-section__title--sub">お問い合わせ</p>
+				</hgroup>
+				<div class="p-section__contents">
+					<form id="js-form" class="p-contact__form" method="post" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdJq9RtyK_ZOIa4ehi92lMGJouvBIXhEBzSsltfstKmzat1Jg/formResponse">
+						<!-- フォーム項目_ポートフォリオ用（お名前、メールアドレス、お問い合わせ種類、お問い合わせ内容）、送信ボタン -->
+						<!-- prettier-ignore -->
+
+						<!-- テキスト（名前） -->
+						<div class="p-contact__form--item">
+							<div class="p-contact__form--title">
+								<label for="your-name" class="p-contact__form--title-text">お名前</label>
+								<span class="p-contact__form--require">必須</span>
+							</div>
+							<div class="p-contact__form--input">
+								<input class="js-text" type="text" id="your-name" placeholder="山田太郎" name="entry.530212225" required />
+								<div class="error-message"></div>
+							</div>
+						</div>
+						<!-- メールアドレス -->
+						<!-- prettier-ignore -->
+
+						<!-- メールアドレス -->
+						<!-- wordPress化する時はinputタグをCONTACT7用に置換える -->
+						<div class="p-contact__form--item">
+							<div class="p-contact__form--title">
+								<label for="email" class="p-contact__form--title-text">メールアドレス</label>
+								<span class="p-contact__form--require">必須</span>
+							</div>
+							<div class="p-contact__form--input">
+								<input class="js-mail" type="email" id="your-email" placeholder="info@example.com" name="emailAddress" required />
+								<div class="error-message"></div>
+							</div>
+						</div>
+						<!-- ラジオボタン -->
+						<!-- prettier-ignore -->
+
+						<!-- ラジオボタン -->
+						<!-- wordPress化する時はinputタグをCONTACT7用に置換える -->
+						<div class="p-contact__form--item reserve__form--item-radio">
+							<div class="p-contact__form--title">
+								<!-- <div class="p-contact__form--title-text">初診/再診</div> -->
+								<div class="p-contact__form--title-text">お問い合わせ種類</div>
+								<!-- <label for="radio-button" class="p-contact__form--title-text">初診/再診</label> -->
+								<span class="p-contact__form--require">必須</span>
+							</div>
+							<div class="p-contact__form--input">
+								<div class="p-contact__form--radio-wrapper js-radio">
+									<label class="p-contact__field--radio">
+										<input type="radio" name="entry.716562788" value="ホームページ制作" required />
+										<span class="p-contact-radio-label">ホームページ制作</span>
+									</label>
+									<label class="p-contact__field--radio">
+										<input type="radio" name="entry.716562788" value="ホームページ修正" />
+										<span class="p-contact-radio-label">ホームページ修正</span>
+									</label>
+									<label class="p-contact__field--radio">
+										<input type="radio" name="entry.716562788" value="ホームページ相談" />
+										<span class="p-contact-radio-label">ホームページ相談</span>
+									</label>
+								</div>
+								<div class="error-message"></div>
+							</div>
+						</div>
+						<!-- テキストアリア -->
+						<!-- prettier-ignore -->
+
+						<!-- テキストアリア -->
+						<!-- wordPress化する時はinputタグをCONTACT7用に置換える -->
+						<div class="p-contact__form--item reserve__form--item-textarea">
+							<div class="p-contact__form--title">
+								<label for="message" class="p-contact__form--title-text"> お問い合わせ内容 </label>
+								<span class="p-contact__form--require">必須</span>
+							</div>
+							<div class="p-contact__form--input">
+								<textarea class="js-text" id="your-message" placeholder="お問い合わせ内容をご入力ください。3営業日以内にご返信いたします。" name="entry.1269014493" required></textarea>
+								<div class="error-message"></div>
+							</div>
+						</div>
+						<!-- チェックボックス -->
+						<!-- prettier-ignore -->
+
+						<!-- チェックボックス -->
+						<!-- wordPress化する時はinputタグをCONTACT7用に置換える -->
+						<div class="p-contact__form--item p-contact__form--item-privacy">
+							<label class="p-contact__form--title p-contact__wrapper-privacy js-form--wrapper">
+								<input class="js-checkbox" type="checkbox" name="entry.2114229630" value="プライバシーポリシーに合意する" required aria-label="プライバシーポリシーに合意する" />
+								<span>
+									<a href="./policy.html" target="_blank""> プライバシーポリシー </a>
+      に合意する
+    </span>
+    <span class=" p-contact__form--require">必須</span>
+							</label>
+							<div class="error-message"></div>
+
+						</div>
+						<!-- 送信ボタン -->
+						<!-- prettier-ignore -->
+
+						<!-- 送信ボタン -->
+						<button id="js-submit" class="c-btn p-contact__btn" type="submit">上記の内容を送信する</button>
+						<!-- wordPress化する時は以下に置換えられる（CONTACT7用） -->
+						<!-- <input class="wpcf7-form-control wpcf7-submit has-spinner js-submit button contact__button" id="js-submit" type="submit" value="送信" disabled="" /> -->
+					</form>
+
+					<!-- 送信後のメッセージ -->
+					<!-- prettier-ignore -->
+
+					<div id="js-success" class="p-contact__message--success">
+						<p>
+							送信完了しました。
+							<br />ありがとうございました。 <br />3営業日以内にご返信いたします。
+						</p>
+					</div>
+					<div id="js-error" class="p-contact__message--error">
+						<p>
+							送信に失敗しました。
+							<br />ページを更新して再度送信してください。
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- footer -->
+		<!-- prettier-ignore -->
+
+		<footer class="p-footer">
+			<div class="l-inner">
+				<div class="p-footer__contents">
+					<small class="p-footer__copyright">&copy;Pumi's Portfolio All rights reserved.</small>
+				</div>
+			</div>
+		</footer>
+		<!-- to-top -->
+		<!-- prettier-ignore -->
+
+		<div class="p-to-top">
+			<a href="#" aria-label="Go to top">
+				<svg width="56" height="56" viewBox="0 0 56 56" fill="none">
+					<path d="M54 28C54 42.3594 42.3594 54 28 54C13.6406 54 2 42.3594 2 28C2 13.6406 13.6406 2 28 2C42.3594 2 54 13.6406 54 28V28Z" fill="white" stroke="#7777FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+					<path d="M38.4001 28.0001L28.0001 17.6001L17.6001 28.0001" stroke="#7777FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+					<path d="M28 38.4001V17.6001" stroke="#7777FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+				</svg>
+			</a>
+		</div>
+	</main>
+	<!-- script-js -->
+	<!-- jQuery読み込み -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js" defer></script>
+	<!-- swiper -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+
+	<!-- slider -->
+	<script src="./assets/js/slider.js" defer></script>
+	<!-- wow -->
+	<script src="./assets/js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+	<!-- dialog -->
+	<script src="./assets/js/dialog.js" defer></script>
+	<!-- contact-html -->
+	<script src="./assets/js/contact-html.js" defer></script>
+	<!-- JavaScript読み込み -->
+	<script src="./assets/js/script.js" defer></script>
+</body>
+
+</html>
