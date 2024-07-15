@@ -1,3 +1,6 @@
+git remote set-url origin git@github.com:pumi-webcoder/template.git
+//プッシュ出来ない時
+
 □ガルプ準備
 ・ホームディレクトリに、以下を格納
 　package.json
